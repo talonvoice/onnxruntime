@@ -59,7 +59,7 @@ def register_custom_op(is_ortmodule=False):
             reduction_vals = ['none', 'mean', 'sum']
             reduction = reduction_vals[reduction]
             output = g.op("com.microsoft::NegativeLogLikelihoodLossInternal",
-                        self, target, weight, ignore_index, reduction_s=reduction)
+                          self, target, weight, ignore_index, reduction_s=reduction)
             output.setType(self.type())
             return output
 
