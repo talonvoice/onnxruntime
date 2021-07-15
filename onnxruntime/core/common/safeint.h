@@ -24,4 +24,4 @@ class SafeIntExceptionHandler<onnxruntime::OnnxRuntimeException> {
 
 #define SAFEINT_EXCEPTION_HANDLER_CPP 1
 #define SafeIntDefaultExceptionHandler SafeIntExceptionHandler<onnxruntime::OnnxRuntimeException>
-#include "safeint/SafeInt.hpp"
+#include "SafeInt.hpp"
